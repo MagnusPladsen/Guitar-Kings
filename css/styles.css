@@ -1,0 +1,60 @@
+/* ------ GENERAL ------ */
+@font-face {
+    font-family: 'Boots And Spurs';
+    src: url('/fonts/BootsAndSpurs.ttf') format('truetype'); /*IMPORT LOCAL FONT*/
+}
+
+
+.dark-bg {
+    background-color: #202020;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.nav-header, h1, h2 {
+    font-family: 'Boots And Spurs'; /* FUNKER IKKE */
+}
+
+p, li, a {
+    font-family: 'Roboto', 'Times New Roman';
+}
+
+header a {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    bottom: 0px;
+    margin-top: 20px;
+}
+
+.reviews {
+    background-color: #e8e8e8;
+}
+
+.guitar {
+    background-color: #FBFBFB;
+}
+
+.view {
+    background-color: red;
+    color: white;
+}
+
+.sale {
+    background-color: #127300;
+    color: white;
+}
+
+/* ------ INDEX ------ */
+
+
+/* ------ GUITARS ------ */
+
+
+/* ------ CONTACT ------ */
