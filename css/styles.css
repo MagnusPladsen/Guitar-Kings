@@ -1,4 +1,5 @@
-/* ------ GENERAL ------ */
+/* GENERAL
+------------------- */
 @font-face {
     font-family: 'Boots And Spurs';
     src: url('/fonts/BootsAndSpurs.ttf') format('truetype'); /*IMPORT LOCAL FONT*/
@@ -13,21 +14,83 @@
     color: white;
 }
 
-a:visited {
+
+/* --- CTA --- */
+.cta {
     color: white;
+    display: inline-block;
+    text-align: center; 
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.cta-small {
+    padding: 10px 35px;
+    font-size: 14px;
+}
+
+.cta-big {
+    padding: 25px 145px; 
+    font-size: 25px;
+}
+.cta-red {
+    background-color: #BB0000;
+}
+
+.cta-sale {
+    background-color: #127300;
+}
+
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    bottom: 0px;
+    margin-top: 20px;
+}
+
+
+/* --- NAV --- */
+nav li {
+    display: inline;
+
+}
+
+nav a {
+    font-size: 30px;
+    margin-right: 30px;
 }
 
 .nav-header, h1, h2 {
     font-family: 'Boots And Spurs' !important;
+    color: #000000;
 }
 
-
-.cta-red {
-    background-color: red;
+.nav-header {
+    font-size: 45px;
     color: white;
-    font-size: 25px;
+    padding: 0px 25px;
 }
 
+/* --- LINKS --- */
+a {
+    text-decoration: none;
+}
+    
+a:visited {
+    color: white;
+}
+    
+.current {
+    text-decoration: underline;
+}
+
+
+
+
+/* INDEX
+------------------- */
+/* --- HEADER --- */
 .hero-header {
     background-image: url(../images/home-header.jpg);
     min-height: 70vh;
@@ -37,13 +100,22 @@ a:visited {
     background-position-y: bottom;
 }
 
-
-footer {
-    text-align: center;
-    bottom: 0px;
-    margin-top: 20px;
+.hero-header h1 {
+    font-size: 40px;
 }
 
+
+/* --- GUITARS --- */
+.guitar {
+    background-color: #FBFBFB;
+}
+
+.guitar-list img {
+    border-radius: 100px;
+}
+
+
+/* --- REVIEWS --- */
 .reviews {
     background-color: #e8e8e8;
 }
@@ -52,41 +124,17 @@ footer {
     border-radius: 50%;
 }
 
-.guitar {
-    background-color: #FBFBFB;
-}
 
-.cta-sale {
-    background-color: #127300;
-    color: white;
-    font-size: 25px;
-}
 
-.guitar-list img {
-    border-radius: 100px;
-}
 
+/* CONTACT
+------------------- */
+/* --- FORM --- */
 input[type=submit] {
     background-color: red;
     border: 0;
     border-radius: 6px;
     color: white;
     font-size: 25px;
-}
-
-nav ul {
-padding: 0px;
-}
-
-a {
-    text-decoration: none;
-}
-
-nav li {
-    display: inline;
-}
-
-.current {
-    text-decoration: underline;
 }
 
