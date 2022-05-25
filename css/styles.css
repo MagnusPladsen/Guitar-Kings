@@ -4,6 +4,9 @@
     src: url('/fonts/BootsAndSpurs.ttf') format('truetype'); /*IMPORT LOCAL FONT*/
 }
 
+* {
+    font-family: 'Roboto', 'sans-serif';
+}
 
 .dark-bg {
     background-color: #202020;
@@ -15,17 +18,25 @@ a:visited {
 }
 
 .nav-header, h1, h2 {
-    font-family: 'Boots And Spurs'; /* FUNKER IKKE */
+    font-family: 'Boots And Spurs' !important;
 }
 
-p, li, a {
-    font-family: 'Roboto', 'Times New Roman';
-}
 
-header a {
+.cta-red {
     background-color: red;
     color: white;
+    font-size: 25px;
 }
+
+.hero-header {
+    background-image: url(../images/home-header.jpg);
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
 
 footer {
     text-align: center;
@@ -37,24 +48,45 @@ footer {
     background-color: #e8e8e8;
 }
 
+.reviews img {
+    border-radius: 50%;
+}
+
 .guitar {
     background-color: #FBFBFB;
 }
 
-.view {
-    background-color: red;
-    color: white;
-}
-
-.sale {
+.cta-sale {
     background-color: #127300;
     color: white;
+    font-size: 25px;
 }
 
-/* ------ INDEX ------ */
+.guitar-list img {
+    border-radius: 100px;
+}
 
+input[type=submit] {
+    background-color: red;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    font-size: 25px;
+}
 
-/* ------ GUITARS ------ */
+nav ul {
+padding: 0px;
+}
 
+a {
+    text-decoration: none;
+}
 
-/* ------ CONTACT ------ */
+nav li {
+    display: inline;
+}
+
+.current {
+    text-decoration: underline;
+}
+
