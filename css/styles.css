@@ -41,6 +41,11 @@
     background-color: #127300;
 }
 
+.cta-contact {
+    padding: 10px 100px; 
+    font-size: 25px;
+}
+
 
 /* --- FOOTER --- */
 footer {
@@ -51,9 +56,8 @@ footer {
 
 
 /* --- NAV --- */
-nav li {
-    display: inline;
-
+nav {
+    padding: 1em;
 }
 
 nav a {
@@ -64,6 +68,14 @@ nav a {
 .nav-header, h1, h2 {
     font-family: 'Boots And Spurs' !important;
     color: #000000;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 30px;
 }
 
 .nav-header {
@@ -102,6 +114,43 @@ a:visited {
 
 .hero-header h1 {
     font-size: 40px;
+    position: absolute;
+    top: 7em;
+    left: 3em;
+}
+
+.hero-header p {
+    position: absolute;
+    top: 23em;
+    left: 16em;
+}
+
+
+/* --- FOOTER --- */
+footer p {
+    font-size: 20px;
+}
+
+
+/* --- GUITARS LIST --- */
+.guitar-list {
+    margin: 3em;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.guitar-list-header {
+    position: relative;
+
+}
+
+.guitar-list-header li {
+    font-size: 35px;
+}
+
+.guitar-list img {
+    max-height: 450px;
 }
 
 
@@ -110,20 +159,122 @@ a:visited {
     background-color: #FBFBFB;
 }
 
+.view-our-guitars {
+    margin: 10em;
+}
+
+.guitar p {
+    font-size: 1.2em;
+}
+
 .guitar-list img {
     border-radius: 100px;
+}
+
+.guitar-container {
+    display: flex;
+}
+
+.guitar {
+    margin: 10px;
+}
+
+.guitar a {
+    position: relative;
+    top: -4em;
+    float: right; 
+}
+
+.guitar img {
+    max-height: 250px;
+}
+
+.strike {
+    text-decoration: line-through;
 }
 
 
 /* --- REVIEWS --- */
 .reviews {
     background-color: #e8e8e8;
+    padding: 3em;
+}
+
+.reviews h2 {
+    text-align: center;
 }
 
 .reviews img {
     border-radius: 50%;
+    max-height: 100px;
 }
 
+.reviews-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+}
+
+.reviews-item {
+    width: 35vw;
+}
+
+
+
+
+/* GUITARS
+------------------- */
+.guitars-page {
+    display: flex;
+    margin: 5em;
+    justify-content: center;
+}
+
+.guitars-page h1 {
+    font-size: 45px;
+}
+
+.guitars-page p {
+    font-size: 20px;
+}
+
+.guitar-price {
+    font-size: 30px !important;
+}
+
+.guitar-show {
+    max-width: 540px;
+    margin-right: 2em;
+}
+
+.guitar-show img {
+    max-width: 540px;
+}
+
+.guitar-show-image-container {
+    display: flex;
+}
+
+.guitar-show-image-container img {
+    height: 80px;
+    flex: 1;
+}
+
+.guitar-show-image {
+    margin-right: 10px;
+}
+
+.guitar-info {
+    max-width: 540px;
+    position: relative;
+    margin-top: -3em;
+}
+
+.cta-contact {
+    position: relative;
+    top: 2em;
+    right: -3.5em;
+}
 
 
 
@@ -131,10 +282,54 @@ a:visited {
 ------------------- */
 /* --- FORM --- */
 input[type=submit] {
-    background-color: red;
+    background-color: #BB0000;
     border: 0;
     border-radius: 6px;
     color: white;
     font-size: 25px;
+    padding: 15px 120px;
 }
 
+.contact {
+    text-align: center;
+}
+
+.form-container {
+    border: 1px solid blue;
+    max-width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 8px;
+}
+
+.form-left-column {
+/*     max-width: 20vw; */
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+/*     flex: 1; */
+}
+
+.form-right-column {
+/*     max-width: 20vw; */
+    border: 1px solid red;
+/*     flex: 1; */
+}
+
+textarea {
+    height: 200px;
+    width: 300px;
+
+}
+
+label {
+    text-align: left;
+}

@@ -13,11 +13,9 @@
     <body>
         <nav class="navigation dark-bg">
             <a class="nav-header" href="./index.html">Guitar Kings</a>
-            <ul>
-                <li><a href="./index.html" class="current">Home</a></li>
-                <li><a href="./guitars.html">Guitars</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+            <a href="./index.html" class="current">Home</a>
+            <a href="./guitars.html">Guitars</a>
+            <a href="./contact.html">Contact</a>
         </nav>
         <header class="hero-header">
             <h1>Authentic Handmade Guitars</h1>
@@ -25,52 +23,54 @@
         </header>
         <main>
             <section class="guitar-list">
-                <h2>Our Guitars Are:</h2>
-                <ul>
-                    <li>Made with real Pennsylvanian wood</li>
-                    <li>Crafted by a family-run business</li>
-                    <li>Built to last a lifetime</li>
-                    <li>Beautiful unique sound</li>
-                    <li>Options for all music lovers</li>
-                </ul>
+                <div  class="guitar-list-header">
+                    <h2>Our Guitars Are:</h2>
+                    <ul>
+                        <li>Made with real Pennsylvanian wood</li>
+                        <li>Crafted by a family-run business</li>
+                        <li>Built to last a lifetime</li>
+                        <li>Beautiful unique sound</li>
+                        <li>Options for all music lovers</li>
+                    </ul>
+                </div>
                 <img src="./images/home-info.jpg" alt="Hands strumming guitar">
             </section>
             <section class="reviews">
                 <h2>Reviews</h2>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis dictum elit. In hac habitasse platea dictumst." - Bob Willis</p>
-                <img src="images/review-bio.jpg" alt="Profile pic of Bob Willis" >
-                <p>"Maecenas interdum, erat nec pulvinar euismod, eros erat omare mauris, commodo vestibulum odio nunc id urna. Sed volutpat consequat dolor, nec sollicitudin elit eleifend vitae." - Sally Oldfield</p>
-                <img src="./images/review-bio2.jpg" alt="Profile pic of Sally Oldfield" >
+                <div class="reviews-container">
+                    <div class="reviews-item">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis dictum elit. In hac habitasse platea dictumst."</p>
+                        <p>- Bob Willis</p><img src="images/review-bio.jpg" alt="Profile pic of Bob Willis" >
+                    </div>
+                    <div class="reviews-item">
+                        <p>"Maecenas interdum, erat nec pulvinar euismod, eros erat omare mauris, commodo vestibulum odio nunc id urna. Sed volutpat consequat dolor, nec sollicitudin elit eleifend vitae."</p>
+                        <p>- Sally Oldfield</p><img src="./images/review-bio2.jpg" alt="Profile pic of Sally Oldfield" >
+                    </div>
+                </div>
             </section>
             <section class="view-our-guitars">
                 <h2>View Our Guitars</h2>
-                <div class="guitar-one guitar">
-                    <img src="images/product.jpg" alt="Adirondack Red Guitar">
-                    <h3>Adirondack Red</h3>
-                    <p>$500</p>
-                    <a class="cta-red cta cta-small" href="">View</a>
-                    <p>Adirondack Red</p>
-                </div>
-                <div class="guitar-two guitar">
-                    <img src="images/product.jpg" alt="Adirondack Red Guitar">
-                    <h3>Adirondack Red</h3>
-                    <p>$500</p>
-                    <a class="cta-sale cta cta-small" href="">On sale</a>
-                    <p>Adirondack Red</p>
-                </div>
-                <div class="guitar-three guitar">
-                    <img src="images/product.jpg" alt="Adirondack Red Guitar">
-                    <h3>Adirondack Red</h3>
-                    <p>$500</p>
-                    <a class="cta-red cta cta-small" href="">View</a>
-                    <p>Adirondack Red</p>
-                </div>
-                <div class="guitar-four guitar">
-                    <img src="images/product.jpg" alt="Adirondack Red Guitar">
-                    <h3>Adirondack Red</h3>
-                    <p>$500</p>
-                    <a class="cta-red cta cta-small" href="">View</a>
-                    <p>Adirondack Red</p>
+                <div class="guitar-container">
+                    <div class="guitar-one guitar">
+                        <img src="images/product.jpg" alt="Adirondack Red Guitar">
+                        <p>Adirondack Red<br>$500</p>
+                        <a class="cta-red cta cta-small" href="">View</a>
+                    </div>
+                    <div class="guitar-two guitar">
+                        <img src="images/product.jpg" alt="Adirondack Red Guitar">
+                        <p>Adirondack Red<br><span class="strike" >$500</span> $400</p>
+                        <a class="cta-sale cta cta-small" href="">On sale</a>
+                    </div>
+                    <div class="guitar-three guitar">
+                        <img src="images/product.jpg" alt="Adirondack Red Guitar">
+                        <p>Adirondack Red<br>$500</p>
+                        <a class="cta-red cta cta-small" href="">View</a>
+                    </div>
+                    <div class="guitar-four guitar">
+                        <img src="images/product.jpg" alt="Adirondack Red Guitar">
+                        <p>Adirondack Red<br>$500</p>
+                        <a class="cta-red cta cta-small" href="">View</a>
+                    </div>
                 </div>
             </section>
         </main>
