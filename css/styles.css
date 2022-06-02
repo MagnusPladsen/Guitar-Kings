@@ -121,8 +121,8 @@ a:visited {
 
 .hero-header p {
     position: absolute;
-    top: 23em;
-    left: 16em;
+    top: 13em;
+    left: 10em;
 }
 
 
@@ -224,6 +224,33 @@ footer p {
 
 /* GUITARS
 ------------------- */
+.product-list {
+    display: grid;
+    grid-template-columns:
+    1fr 1fr 1fr;
+    gap: 1em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product-list img {
+    max-width: 300px;
+}
+
+.product-list p {
+    font-size: 14px;
+    text-align: left;
+    float: left;
+}
+
+.product-list a {
+    float: right;
+}
+
+.guitars-main {
+    text-align: center;
+}
+
 .guitars-page {
     display: flex;
     margin: 5em;
@@ -281,6 +308,21 @@ footer p {
 /* CONTACT
 ------------------- */
 /* --- FORM --- */
+input,
+select,
+textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+
+}
+
+textarea {
+    height: 60%;
+    width: 90%;
+}
+
 input[type=submit] {
     background-color: #BB0000;
     border: 0;
@@ -292,44 +334,24 @@ input[type=submit] {
 
 .contact {
     text-align: center;
+    max-width: 1000px;
+    margin: 5em auto 10em auto;
 }
 
-.form-container {
-    border: 1px solid blue;
-    max-width: 40vw;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-form {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-input {
-    border-radius: 8px;
-}
-
-.form-left-column {
-/*     max-width: 20vw; */
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-/*     flex: 1; */
-}
-
-.form-right-column {
-/*     max-width: 20vw; */
-    border: 1px solid red;
-/*     flex: 1; */
-}
-
-textarea {
-    height: 200px;
-    width: 300px;
-
-}
 
 label {
     text-align: left;
+}
+
+.form-container {
+    display: flex;
+}
+
+.form-container > * {
+    flex: 1;
+}
+
+.form-left-column {
+    display: flex;
+    flex-direction: column;
 }
